@@ -1,9 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	// "log"
+)
 
 func main() {
-	for i := 1; i < 21; i++ {
+	// var maxnum int
+	maxnum := 25
+
+	// fmt.Println("number of integers: ")
+	// _, err := fmt.Scanf("%d", &maxnum)
+	// if err != nil {
+	// log.Fatal(err)
+	// }
+
+	for i := 1; i < (maxnum + 1); i++ {
 		// fmt.Println(i)
 		if i%15 == 0 {
 			fmt.Println("FizzBuzz")
@@ -22,14 +34,4 @@ func main() {
 
 	}
 
-	// if i%3 == 0 {
-	// fmt.Println("fizz")
-	// } else {
-	// fmt.Println(i)
-	// }
-	// else {
-	// if i%5 == 0 {
-	// fmt.Println("buzz")
-	// }
-	// }
 }
